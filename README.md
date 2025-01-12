@@ -1,5 +1,13 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/flamboyant-lumiere-482a1e/deploys)
 
+# [패스트캠퍼스] 시그니처 프론트엔드
+
+## Vanilla javascript로 스타벅스 랜딩페이지 만들어보기
+
+### 2025.01 ~
+
+---
+
 # ☕ STARBUCKS
 
 스타벅스 랜딩 페이지(홈페이지)를 만드는 예제입니다. <br>
@@ -18,7 +26,7 @@
 문자가 인코딩되는 방식을 설정합니다.
 
 ```html
-<meta charset="UTF-8"/>
+<meta charset="UTF-8" />
 ```
 
 - `UTF-8`: 초성, 중성, 종성으로 구분하여 문자를 작성(권장)
@@ -57,7 +65,10 @@ KakaoTalk -
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Starbucks" />
 <meta property="og:title" content="Starbucks Coffee Korea" />
-<meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+<meta
+  property="og:description"
+  content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다."
+/>
 <meta property="og:image" content="./images/starbucks_seo.jpg" />
 <meta property="og:url" content="https://starbucks.co.kr" />
 ```
@@ -79,7 +90,10 @@ KakaoTalk -
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:site" content="Starbucks" />
 <meta property="twitter:title" content="Starbucks Coffee Korea" />
-<meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+<meta
+  property="twitter:description"
+  content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다."
+/>
 <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
 <meta property="twitter:url" content="https://starbucks.co.kr" />
 ```
@@ -121,7 +135,10 @@ KakaoTalk -
 각 브라우저의 기본 스타일을 초기화합니다.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+/>
 ```
 
 ## Google Fonts
@@ -134,14 +151,17 @@ KakaoTalk -
 
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 페이지에 폰트를 적용(CSS 상속)합니다.
 
 ```css
 body {
-    font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 ```
 
@@ -152,7 +172,10 @@ body {
 [Getting started for web](https://material.io/develop/web/getting-started)
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
 ```
 
 다음과 같이 사용할 수 있습니다.
@@ -169,22 +192,30 @@ body {
 > 자바스크립트 지식이 뛰어나지 않아도 충분히 사용할 수 있습니다!
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+  integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+  crossorigin="anonymous"
+></script>
 ```
 
-[.to() 사용법](https://greensock.com/docs/v3/GSAP/gsap.to())
+[.to() 사용법](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
 [GSAP Easing](https://greensock.com/docs/v2/Easing)
 
 ```js
-gsap.to(요소, 시간, 옵션)
+gsap.to(요소, 시간, 옵션);
 // 또는
-TweenMax.to(요소, 시간, 옵션)
+TweenMax.to(요소, 시간, 옵션);
 ```
 
 ```js
-gsap.to(window, .7, {
-  scrollTo: 0
+gsap.to(window, 0.7, {
+  scrollTo: 0,
 });
 ```
 
@@ -200,7 +231,10 @@ gsap.to(window, .7, {
 
 ```html
 <!-- in HEAD -->
-<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+/>
 <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
 <!-- in BODY -->
@@ -220,10 +254,10 @@ new Swiper(요소, 옵션);
 ```
 
 ```js
-new Swiper('.swiper-container', {
-  direction: 'vertical', // 수직 슬라이드
+new Swiper(".swiper-container", {
+  direction: "vertical", // 수직 슬라이드
   autoplay: true, // 자동 재생 여부
-  loop: true // 반복 재생 여부
+  loop: true, // 반복 재생 여부
 });
 ```
 
@@ -248,26 +282,26 @@ new Swiper('.swiper-container', {
 
 ```js
 // Youtube IFrame API를 비동기로 로드합니다.
-var tag = document.createElement('script');
+var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
+var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubePlayerAPIReady() {
   // <div id="player"></div>
-  new YT.Player('player', {
-    videoId: 'An6LvWQuj_8', // 재생할 유튜브 영상 ID
+  new YT.Player("player", {
+    videoId: "An6LvWQuj_8", // 재생할 유튜브 영상 ID
     playerVars: {
       autoplay: true, // 자동 재생 유무
       loop: true, // 반복 재생 유무
-      playlist: 'An6LvWQuj_8' // 반복 재생할 유튜브 영상 ID 목록
+      playlist: "An6LvWQuj_8", // 반복 재생할 유튜브 영상 ID 목록
     },
     events: {
       // 영상이 준비되었을 때,
       onReady: function (event) {
         event.target.mute(); // 음소거!
-      }
-    }
+      },
+    },
   });
 }
 ```
@@ -284,13 +318,13 @@ function onYouTubePlayerAPIReady() {
 ```
 
 ```js
-new ScrollMagic
-  .Scene({ // 감시할 장면(Scene)을 추가
-    triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
-    triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
-  })
-  .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
-  .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
+new ScrollMagic.Scene({
+  // 감시할 장면(Scene)을 추가
+  triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+  triggerHook: 0.8, // 화면의 80% 지점에서 보여짐 여부 감시
+})
+  .setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
+  .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 ```
 
 ## Lodash
@@ -301,7 +335,11 @@ new ScrollMagic
 [Lodash throttle](https://lodash.com/docs/4.17.15#throttle)
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+  integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+  crossorigin="anonymous"
+></script>
 ```
 
 ## JS Strict Mode
@@ -310,7 +348,7 @@ JavaScript를 '엄격 모드'로 사용합니다.<br>
 파일 혹은 함수의 최상단에 작성해야 합니다.
 
 ```javascript
-'use strict';
+"use strict";
 ```
 
 > 'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
@@ -328,7 +366,7 @@ JavaScript를 '엄격 모드'로 사용합니다.<br>
 function random(min, max) {
   // `.toFixed()`를 통해 반환된 문자 데이터를,
   // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
-  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2));
 }
 ```
 
@@ -456,7 +494,10 @@ function random(min, max) {
       <div class="contents__texture">
         <div class="inner">
           <h4 class="new">스타벅스 티바나</h4>
-          <p>다양한 찻잎과 향신료 등 개성있는 재료로 새로운 맛과 향의 티를 선보입니다.</p>
+          <p>
+            다양한 찻잎과 향신료 등 개성있는 재료로 새로운 맛과 향의 티를
+            선보입니다.
+          </p>
         </div>
       </div>
     </div>
