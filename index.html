@@ -46,13 +46,14 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css//main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
       integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- gsap -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -61,6 +62,7 @@
     ></script>
     <!-- swiper -->
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script defer src="./js/youtube.js"></script>
     <script defer src="./js//main.js"></script>
   </head>
   <body>
@@ -546,7 +548,40 @@
 
     <!-- REWARDS -->
     <section class="rewards">
-      <div class="inner"></div>
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="btn-group">
+          <div class="btn btn--reverse sign-up">회원가입</div>
+          <div class="btn sign-in">로그인</div>
+          <div class="btn gift">e-Gift 선물하기</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YOUTUBE VIDEO -->
+    <section class="youtube">
+      <div class="youtube__area">
+        <div id="player"></div>
+      </div>
+      <div class="youtube__cover"></div>
+      <div class="inner">
+        <img
+          src="./images/floating1.png"
+          alt="Icon"
+          class="floating floating1"
+        />
+        <img
+          src="./images/floating2.png"
+          alt="Icon"
+          class="floating floating2"
+        />
+        <img
+          src="./images/floating3.png"
+          alt="Icon"
+          class="floating floating3"
+        />
+      </div>
     </section>
   </body>
 </html>
